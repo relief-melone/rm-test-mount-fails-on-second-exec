@@ -1,29 +1,14 @@
 # rm-test-mount-fails-on-second-exec
 
-## Project setup
-```
-npm install
-```
+Issue for Vue-Test-Utils/Vuetify
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Problem is that when executing multiple tests each mounting a component the second attempt will always fail. The Issues can be found here
 
-### Compiles and minifies for production
-```
-npm run build
-```
+[Vue-Test-Utils](https://github.com/vuejs/vue-test-utils/issues/1359)
+[Vuetify](https://github.com/vuetifyjs/vuetify/issues/9820)
 
-### Run your unit tests
-```
-npm run test:unit
-```
+To reproduce the error
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. Clone Repository
+2. npm install
+3. npm run test:unit
