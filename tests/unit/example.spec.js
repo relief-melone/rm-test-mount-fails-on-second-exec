@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import PermissionTable from '@/components/BugExample.vue'
+import BugExample from '@/components/BugExample.vue'
 import { expect } from "chai";
 import Vuetify from "vuetify";
 import Vue from "vue";
@@ -12,7 +12,7 @@ describe('BugExample.vue', () => {
   it.only('tests first thing', () => {
     
     const vuetify = new Vuetify();
-    const wrapper = mount(PermissionTable, {
+    const wrapper = mount(BugExample, {
       localVue,
       vuetify,
       propsData: { value: [] }
@@ -26,7 +26,7 @@ describe('BugExample.vue', () => {
   it.only('tests second thing', () => {
     
     const vuetify = new Vuetify();
-    const wrapper = mount(PermissionTable, {
+    const wrapper = mount(BugExample, {
       localVue,
       vuetify,
       propsData: { value: [] }
@@ -39,7 +39,7 @@ describe('BugExample.vue', () => {
   it.only('tests third thing', async () => {
     
     const vuetify = new Vuetify();
-    const wrapper = mount(PermissionTable, {
+    const wrapper = mount(BugExample, {
       localVue,
       vuetify,
       propsData: { value: [] }
@@ -52,7 +52,7 @@ describe('BugExample.vue', () => {
   it.only('tests fourth thing', () => {
     
     const vuetify = new Vuetify();
-    const wrapper = mount(PermissionTable, {
+    const wrapper = mount(BugExample, {
       vuetify,
       propsData: { value: [] }
     })
